@@ -1,0 +1,85 @@
+---
+
+---
+
+<section
+    class='absolute top-0 z-[-2] h-full w-full transform bg-white bg-[radial-gradient(60%_120%_at_50%_50%,hsla(0,0%,100%,0)_0,rgba(252,205,238,.5)_100%)]'
+>
+    <h2>Resultados</h2>
+    <div>
+        <swiper-container
+            class='mySwiper'
+            pagination='false'
+            effect='coverflow'
+            grab-cursor='true'
+            centered-slides='true'
+            slides-per-view='auto'
+            coverflow-effect-rotate='50'
+            coverflow-effect-stretch='0'
+            coverflow-effect-depth='100'
+            coverflow-effect-modifier='1'
+            coverflow-effect-slide-shadows='false'
+        >
+            <swiper-slide>
+                <img src='/results/result1.jpeg' />
+                <img
+                    class='pt-10'
+                    src='/results/result3.jpeg'
+                />
+            </swiper-slide>
+            <swiper-slide>
+                <img src='/results/result2.jpeg' />
+            </swiper-slide>
+
+            <swiper-slide>
+                <img src='/results/result4.jpeg' />
+            </swiper-slide>
+            <swiper-slide>
+                <img src='/results/result5.jpeg' />
+            </swiper-slide>
+        </swiper-container>
+
+        <script
+            src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js'
+        ></script>
+    </div>
+</section>
+
+<style>
+    section {
+        position: relative;
+        height: 75%;
+    }
+
+    div {
+        font-family:
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        font-size: 14px;
+    }
+
+    swiper-container {
+        width: 30rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    swiper-slide {
+        width: 55%;
+        height: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    swiper-slide img {
+        display: block;
+        max-width: 100%;
+        max-height: 80%;
+        object-fit: fill;
+    }
+</style>

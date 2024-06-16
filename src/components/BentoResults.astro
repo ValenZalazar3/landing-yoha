@@ -1,0 +1,61 @@
+---
+import BentoItem from '@/components/BentoItem.astro'
+---
+
+<section class='mt-20'>
+  <div class='text-center'>
+    <h2
+      class='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl mt-10'
+    >
+      Resultados
+    </h2>
+  </div>
+  <section
+    class={`
+    max-w-[1000px]    
+    grid lg:grid-cols-10 auto-rows-[20rem] gap-4
+    mx-auto p-6 md:p-12 lg:p-20
+  `}
+  >
+    <BentoItem class='col-span-10 lg:col-span-6'>
+      <div
+        slot='image'
+        class='absolute left-0 top-0 bottom-0 w-full h-full bg-cover'
+        style="background-image: url('/results/result1.jpeg');"
+      >
+      </div>
+    </BentoItem>
+    <BentoItem class='col-span-10 lg:col-span-4 lg:row-span-2'>
+      <div
+        slot='image'
+        class='absolute w-full h-full bg-cover'
+        style="background-image: url('/results/result2.jpeg');"
+      >
+      </div>
+    </BentoItem>
+    <BentoItem class='col-span-10 lg:col-span-6 lg:row-span-2'>
+      <div
+        slot='image'
+        class='absolute w-full h-full bg-contain bg-no-repeat'
+        style="background-image: url('/results/result5.jpeg');"
+      >
+      </div>
+    </BentoItem>
+    <BentoItem class='col-span-10 lg:col-span-4 lg:row-span-2'>
+      <div
+        slot='image'
+        class='absolute w-full h-full bg-contain bg-no-repeat mt-2'
+        style="background-image: url('/results/result4.jpeg');"
+      >
+      </div>
+    </BentoItem>
+    <BentoItem class='col-span-10 lg:col-span-6'>
+      <div
+        slot='image'
+        class='absolute w-full h-full bg-contain bg-no-repeat rounded-b-3xl'
+        style="background-image: url('/results/result3.jpeg');"
+      >
+      </div>
+    </BentoItem>
+  </section>
+</section>

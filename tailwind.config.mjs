@@ -2,7 +2,10 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
-		extend: {},
+		extend: {boxShadow: {
+			'up-green': '0 -8px 18px -1px rgba(0, 230, 118, 0.7)',
+			'up-green-hover': '0 -12px 20px -6px rgba(0, 230, 118, 0.9)',
+		  },},
 	},
-	plugins: [],
+	plugins: [require('flowbite/plugin')],
 }

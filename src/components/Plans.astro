@@ -2,31 +2,61 @@
 import Cards from './Cards.astro'
 ---
 
-<section>
-    <h2>¡Descubrí como obtener estos cambios para vos!</h2>
+<section class='py-16'>
+    <h2 class='text-center text-4xl font-bold mb-8'>
+        ¡Descubrí como obtener estos cambios para vos!
+    </h2>
 
-    <!-- Los servicios que ofrezco son 
-    Asesoramiento para lograr los resultados específicos en cuanto a alimentación y ejercicios 
-
-    Hago rutinas específicas para lograr ciertos tipos de objetivos como hipertrofia o aumentar glúteos marcar abdomen 
-
-    Acompañamiento en el entrenamiento enseñanza de técnicas más motivación 
-
-    Coreografa armar rutinas o simplemente dictado de clases online en vivo de todos los ritmos -->
-
-    <Cards
-        title='Programa Físico - Nutricional'
-        subtitle='Asesoramiento para lograr los resultados específicos en cuanto a alimentación y ejercicios'
-        class=''
-    />
-    <Cards
-        title='Programa objetivo único'
-        subtitle='rutinas específicas para lograr ciertos tipos de objetivos como hipertrofia o aumentar glúteos marcar abdomen'
-        class=''
-    />
-    <Cards
-        title='Baile'
-        subtitle='Coreografa armar rutinas o simplemente dictado de clases online en vivo de todos los ritmos'
-        class=''
-    />
+    <div
+        class='flex flex-col max-w-[1600px] lg:flex-row gap-2 mx-auto p-6 md:p-12 lg:p-20'
+    >
+        <Cards
+            title='Programa Físico - Nutricional'
+            subtitle='Asesoramiento para lograr los resultados específicos en cuanto a alimentación y ejercicios'
+            class='flex-1'
+        >
+            <div
+                slot='image'
+                class='w-full h-96 bg-cover bg-center transition-opacity duration-500 hover:opacity-75'
+                style="background-image: url('/others/smilingrun.jpeg');"
+            >
+            </div>
+        </Cards>
+        <Cards
+            title='Programa Nutricional'
+            subtitle='Asesoramiento para lograr los resultados específicos en cuanto a alimentación y ejercicios'
+            class='flex-1'
+        >
+            <div
+                slot='image'
+                class='w-full h-96 bg-cover transition-opacity duration-500 hover:opacity-75'
+                style="background-image: url('/others/smiling.jpeg');"
+            >
+            </div>
+        </Cards>
+        <Cards
+            title='Programa objetivo único'
+            subtitle='Rutinas específicas para lograr ciertos tipos de objetivos como hipertrofia o aumentar glúteos marcar abdomen'
+            class='flex-1'
+        >
+            <div
+                slot='image'
+                class='w-full h-96 bg-cover bg-center transition-opacity duration-500 hover:opacity-75'
+                style="background-image: url('/others/doexercise1.jpeg');"
+            >
+            </div>
+        </Cards>
+        <Cards
+            title='Baile'
+            subtitle='Coreografía, armar rutinas o simplemente dictado de clases online en vivo de todos los ritmos'
+            class='flex-1'
+        >
+            <div
+                slot='image'
+                class='w-full h-96 bg-cover bg-center transition-opacity duration-500 hover:opacity-75'
+                style="background-image: url('/others/serious.jpeg');"
+            >
+            </div>
+        </Cards>
+    </div>
 </section>

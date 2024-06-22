@@ -1,0 +1,74 @@
+<section>
+    <swiper-container
+        class='mySwiper'
+        pagination='true'
+        effect='coverflow'
+        grab-cursor='true'
+        centered-slides='true'
+        slides-per-view='auto'
+        coverflow-effect-rotate='50'
+        coverflow-effect-stretch='0'
+        coverflow-effect-depth='100'
+        coverflow-effect-modifier='1'
+        coverflow-effect-slide-shadows='true'
+    >
+        <swiper-slide>
+            <img src='/photosWith/photowithdegref.jpeg' />
+        </swiper-slide>
+        <swiper-slide>
+            <img src='/photosWith/photowithpatryjordan.jpeg' />
+        </swiper-slide>
+        <swiper-slide>
+            <img src='/photosWith/photomuscleguy.jpeg' />
+        </swiper-slide>
+        <swiper-slide>
+            <img src='/photosWith/photowithcoach.jpeg' />
+        </swiper-slide>
+        <swiper-slide>
+            <img src='/photosWith/photowithguy.jpeg' />
+        </swiper-slide>
+        <swiper-slide>
+            <img src='/photosWith/photowithgirl.jpeg' />
+        </swiper-slide>
+    </swiper-container>
+
+    <script
+        src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js'
+    ></script>
+</section>
+
+<style>
+    section {
+        position: relative;
+        height: 100%;
+    }
+
+    section {
+        font-family:
+            Helvetica Neue,
+            Helvetica,
+            Arial,
+            sans-serif;
+        font-size: 14px;
+        margin: 0;
+        padding: 0;
+    }
+
+    swiper-container {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+    }
+
+    swiper-slide img {
+        display: block;
+        width: 100%;
+    }
+</style>

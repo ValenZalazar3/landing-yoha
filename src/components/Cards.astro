@@ -1,4 +1,6 @@
 ---
+import Button from './Button.astro'
+
 interface Props {
     title: string
     subtitle: string
@@ -7,8 +9,28 @@ interface Props {
 const { title, subtitle } = Astro.props
 ---
 
-<article class={`${Astro.props.class}`}>
-    <h3>{title}</h3>
-
-    <p>{subtitle}</p>
+<article
+    class={`
+    ${Astro.props.class ?? ''}
+    relative rounded-xl
+    backdrop-blur-md
+    shadow-inner shadow-white/10
+    overflow-hidden
+    group
+    bg-gray-500 bg-opacity-75
+    text-white
+    hover:bg-gray-900 
+    transition-colors duration-500
+    w-[95%] mx-auto
+    flex flex-col
+  `}
+>
+    <slot name='image' />
+    <div class='select-none flex flex-col gap-1 p-6 text-lg z-20 flex-grow'>
+        <h3 class='text-2xl font-semibold mb-4'>
+            {title}
+        </h3>
+        <p class='text-lg'>{subtitle}</p>
+    </div>
+    <Button class='mt-auto' />
 </article>

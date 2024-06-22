@@ -1,61 +1,139 @@
----
-import BentoItem from '@/components/BentoItem.astro'
----
-
-<section class='mt-20'>
-  <div class='text-center'>
-    <h2
-      class='text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl mt-10'
-    >
-      Resultados
-    </h2>
-  </div>
-  <section
-    class={`
-    max-w-[1000px]    
-    grid lg:grid-cols-10 auto-rows-[20rem] gap-4
-    mx-auto p-6 md:p-12 lg:p-20
-  `}
+<section>
+  <swiper-container
+    class='mySwiper'
+    pagination='true'
+    pagination-clickable='true'
+    space-between='30'
+    slides-per-view='3'
   >
-    <BentoItem class='col-span-10 lg:col-span-6'>
-      <div
-        slot='image'
-        class='absolute left-0 top-0 bottom-0 w-full h-full bg-cover'
-        style="background-image: url('/results/result1.jpeg');"
-      >
-      </div>
-    </BentoItem>
-    <BentoItem class='col-span-10 lg:col-span-4 lg:row-span-2'>
-      <div
-        slot='image'
-        class='absolute w-full h-full bg-cover'
-        style="background-image: url('/results/result2.jpeg');"
-      >
-      </div>
-    </BentoItem>
-    <BentoItem class='col-span-10 lg:col-span-6 lg:row-span-2'>
-      <div
-        slot='image'
-        class='absolute w-full h-full bg-contain bg-no-repeat'
-        style="background-image: url('/results/result5.jpeg');"
-      >
-      </div>
-    </BentoItem>
-    <BentoItem class='col-span-10 lg:col-span-4 lg:row-span-2'>
-      <div
-        slot='image'
-        class='absolute w-full h-full bg-contain bg-no-repeat mt-2'
-        style="background-image: url('/results/result4.jpeg');"
-      >
-      </div>
-    </BentoItem>
-    <BentoItem class='col-span-10 lg:col-span-6'>
-      <div
-        slot='image'
-        class='absolute w-full h-full bg-contain bg-no-repeat rounded-b-3xl'
-        style="background-image: url('/results/result3.jpeg');"
-      >
-      </div>
-    </BentoItem>
-  </section>
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result2.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result4.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result5.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide class='flex flex-col gap-8'>
+      <img
+        class='rounded-lg'
+        src='results/result1.jpeg'
+      />
+      <img
+        class='rounded-lg'
+        src='results/result3.jpeg'
+      />
+    </swiper-slide>
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result2.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result4.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result5.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide class='flex flex-col gap-8'>
+      <img
+        class='rounded-lg'
+        src='results/result1.jpeg'
+      />
+      <img
+        class='rounded-lg'
+        src='results/result3.jpeg'
+      />
+    </swiper-slide>
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result2.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result4.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result5.jpeg'
+      /></swiper-slide
+    >
+    <swiper-slide class='flex flex-col gap-8'>
+      <img
+        class='rounded-lg'
+        src='results/result1.jpeg'
+      />
+      <img
+        class='rounded-lg'
+        src='results/result3.jpeg'
+      />
+    </swiper-slide>
+  </swiper-container>
+
+  <script
+    src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js'
+  ></script>
 </section>
+
+<style>
+  section {
+    position: relative;
+    height: 100%;
+  }
+
+  section {
+    font-family:
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-size: 14px;
+
+    margin: 0;
+    padding: 0;
+    margin-bottom: 6rem;
+  }
+
+  swiper-container {
+    width: 70%;
+    height: 70%;
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>

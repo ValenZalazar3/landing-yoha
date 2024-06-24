@@ -18,19 +18,18 @@ const { title, subtitle } = Astro.props
     overflow-hidden
     group
     bg-gray-500 bg-opacity-75
-    text-white
-    hover:bg-gray-900 
-    transition-colors duration-500
+    text-white    
     w-[95%] mx-auto
     flex flex-col
   `}
 >
     <slot name='image' />
-    <div class='select-none flex flex-col gap-1 p-6 text-lg z-20 flex-grow'>
+    <div
+        class='select-none flex flex-col gap-1 p-6 text-lg z-20 flex-grow transition-transform duration-500 hover:scale-105'
+    >
         <h3 class='text-2xl font-semibold mb-4'>
             {title}
         </h3>
         <p class='text-lg'>{subtitle}</p>
     </div>
-    <Button class='mt-auto' />
 </article>

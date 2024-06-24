@@ -1,8 +1,12 @@
 ---
+import Button from './Button.astro'
 import Cards from './Cards.astro'
 ---
 
-<section class='py-16 mt-7'>
+<section
+    id='section-plans'
+    class='py-16 mt-5'
+>
     <h2 class='text-center text-2xl lg:text-4xl mx-2'>
         <strong class='font-semibold text-pink-600'>IMPULSA</strong> TU COMPROMISO
         Y <strong class='font-semibold text-pink-600'>MOTIVACIÓN</strong> CON ESTOS
@@ -20,7 +24,7 @@ import Cards from './Cards.astro'
         <Cards
             title='Programa Físico - Nutricional'
             subtitle='Asesoramiento para lograr los resultados específicos en cuanto a alimentación y ejercicios'
-            class='flex-1'
+            class='flex-1 hover:bg-red-300'
         >
             <div
                 slot='image'
@@ -32,7 +36,7 @@ import Cards from './Cards.astro'
         <Cards
             title='Programa Nutricional'
             subtitle='Asesoramiento para lograr los resultados específicos en cuanto a alimentación y ejercicios'
-            class='flex-1'
+            class='flex-1 hover:bg-green-300'
         >
             <div
                 slot='image'
@@ -44,7 +48,7 @@ import Cards from './Cards.astro'
         <Cards
             title='Programa objetivo único'
             subtitle='Rutinas específicas para lograr ciertos tipos de objetivos como hipertrofia o aumentar glúteos marcar abdomen'
-            class='flex-1'
+            class='flex-1 hover:bg-purple-300'
         >
             <div
                 slot='image'
@@ -56,7 +60,7 @@ import Cards from './Cards.astro'
         <Cards
             title='Baile'
             subtitle='Coreografía, armar rutinas o simplemente dictado de clases online en vivo de todos los ritmos'
-            class='flex-1'
+            class='flex-1 hover:bg-orange-300'
         >
             <div
                 slot='image'
@@ -65,5 +69,8 @@ import Cards from './Cards.astro'
             >
             </div>
         </Cards>
+    </div>
+    <div class='flex justify-center'>
+        <Button />
     </div>
 </section>

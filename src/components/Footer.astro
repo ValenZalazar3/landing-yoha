@@ -1,50 +1,58 @@
-<footer class='bg-gray-800 shadow mt-4'>
+---
+import Tiktok from '@/icons/Tiktok.astro'
+import Youtube from '@/icons/Youtube.astro'
+---
+
+<footer class='bg-gray-800 shadow pt-12 mt-10'>
     <div
-        class='w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'
+        class='flex flex-col w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between'
     >
-        <span class='text-sm text-gray-300 sm:text-center dark:text-gray-400'
+        <ul
+            class='flex flex-wrap space-x-10 items-center mb-5 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0'
+        >
+            <span
+                class='text-sm text-gray-300 sm:text-center dark:text-gray-400 mb-5'
+                >Seguime en
+            </span>
+            <li>
+                <a
+                    href='https://www.instagram.com/yohana_sil/'
+                    class='me-4 md:me-6'
+                    target='_blank'
+                >
+                    <img
+                        src='/icons/instagram.svg'
+                        class='w-8 h-8'
+                        alt='Instagram image'
+                    />
+                </a>
+            </li>
+            <li>
+                <a
+                    href='https://www.youtube.com/@YohanaSilva'
+                    class='me-4 md:me-6'
+                    target='_blank'
+                >
+                    <Youtube class='w-8 h-8' />
+                </a>
+            </li>
+            <li>
+                <a
+                    href='https://www.tiktok.com/@yohanasil7'
+                    class='me-4 md:me-10'
+                    target='_blank'
+                >
+                    <Tiktok class='w-8 h-8' />
+                </a>
+            </li>
+        </ul>
+        <span
+            class='text-sm text-gray-300 sm:text-center dark:text-gray-400 mb-8'
             >© 2024 <a
                 href='https://flowbite.com/'
                 class=''
                 >Yohana Silva</a
             >. Coach fitness, te ayudo a llegar a tu mejor versión
         </span>
-        <ul
-            class='flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0'
-        >
-            <li>
-                <a
-                    href='#'
-                    class='me-4 md:me-6'
-                    ><img
-                        class='w-6 h-6'
-                        src='/icons/instagram.svg'
-                        alt='instagram logo'
-                    /></a
-                >
-            </li>
-            <li>
-                <a
-                    href='#'
-                    class='me-4 md:me-6'
-                    ><img
-                        class='w-6 h-6'
-                        src='/icons/youtube.svg'
-                        alt='youtube logo'
-                    /></a
-                >
-            </li>
-            <li>
-                <a
-                    href='#'
-                    class='me-4 md:me-6'
-                    ><img
-                        class='w-6 h-6'
-                        src='/icons/tiktok.svg'
-                        alt='tiktok logo'
-                    /></a
-                >
-            </li>
-        </ul>
     </div>
 </footer>

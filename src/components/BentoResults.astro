@@ -1,9 +1,21 @@
 <section>
-  <div class='flex justify-center items-center'>
-    <h2 class='text-2xl mb-10 text-center lg:text-4xl'>
-      ELLOS YA CONSIGUIERON SU CAMBIO
+  <div>
+    <h2 class='text-2xl mb-3 text-center lg:text-4xl'>
+      LA PALABRA <strong class='font-semibold text-pink-600'>CONVENCE</strong>
+      PERO LOS EJEMPLOS <strong class='font-semibold text-pink-600'
+        >ARRASTRAN</strong
+      >
     </h2>
-    <p></p>
+    <p class='text-center mt-2'>
+      No puedo dar algo que no tengo, por eso
+      <strong class='font-semibold text-pink-600'>
+        decidí empezar por mi misma.
+      </strong>
+    </p>
+    <p class='text-center mb-10'>
+      Y ellos son la prueba de que
+      <strong class='font-semibold text-pink-600'>vos también podés.</strong>
+    </p>
   </div>
   <swiper-container
     class='mySwiper'
@@ -15,148 +27,104 @@
     <swiper-slide
       ><img
         class='rounded-lg'
-        src='results/result2.jpeg'
+        src='results/result1.webp'
       /></swiper-slide
     >
     <swiper-slide
       ><img
         class='rounded-lg'
-        src='results/result4.jpeg'
-      /></swiper-slide
-    >
-    <swiper-slide
-      ><img
-        class='rounded-lg'
-        src='results/result5.jpeg'
-      /></swiper-slide
-    >
-    <swiper-slide class='flex flex-col gap-8'>
-      <img
-        class='rounded-lg'
-        src='results/result1.jpeg'
-      />
-      <img
-        class='rounded-lg'
-        src='results/result3.jpeg'
+        src='results/result2.webp'
       />
     </swiper-slide>
     <swiper-slide
       ><img
         class='rounded-lg'
-        src='results/result2.jpeg'
-      /></swiper-slide
-    >
-    <swiper-slide
-      ><img
-        class='rounded-lg'
-        src='results/result4.jpeg'
-      /></swiper-slide
-    >
-    <swiper-slide
-      ><img
-        class='rounded-lg'
-        src='results/result5.jpeg'
-      /></swiper-slide
-    >
+        src='results/result4.webp'
+      />
+    </swiper-slide>
     <swiper-slide class='flex flex-col gap-8'>
       <img
         class='rounded-lg'
-        src='results/result1.jpeg'
+        src='results/result8.webp'
       />
       <img
         class='rounded-lg'
-        src='results/result3.jpeg'
+        src='results/result3.webp'
       />
     </swiper-slide>
     <swiper-slide
       ><img
         class='rounded-lg'
-        src='results/result2.jpeg'
-      /></swiper-slide
-    >
-    <swiper-slide
-      ><img
-        class='rounded-lg'
-        src='results/result4.jpeg'
-      /></swiper-slide
-    >
-    <swiper-slide
-      ><img
-        class='rounded-lg'
-        src='results/result5.jpeg'
-      /></swiper-slide
-    >
-    <swiper-slide class='flex flex-col gap-8'>
-      <img
-        class='rounded-lg'
-        src='results/result1.jpeg'
-      />
-      <img
-        class='rounded-lg'
-        src='results/result3.jpeg'
+        src='results/result5.webp'
       />
     </swiper-slide>
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result6.webp'
+      />
+    </swiper-slide>
+    <swiper-slide
+      ><img
+        class='rounded-lg'
+        src='results/result7.webp'
+      />
+    </swiper-slide>
+
+    <script
+      src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js'
+    ></script>
   </swiper-container>
-
-  <script
-    src='https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js'
-  ></script>
-</section>
-<script>
-  // Ajustar slidesPerView dependiendo del tamaño de la pantalla
-  const swiperContainer = document.getElementById('mySwiper')
-  const updateSlidesPerView = (): void => {
-    const slidesPerView = window.innerWidth < 640 ? 1 : 3
-    swiperContainer!.setAttribute('slides-per-view', slidesPerView.toString())
-  }
-
-  // Actualizar al cargar la página
-  updateSlidesPerView()
-
-  // Actualizar al cambiar el tamaño de la pantalla
-  window.addEventListener('resize', updateSlidesPerView)
-</script>
-
-<style>
-  section {
-    position: relative;
-    height: 100%;
-  }
-
-  section {
-    font-family:
-      Helvetica Neue,
-      Helvetica,
-      Arial,
-      sans-serif;
-    font-size: 14px;
-    margin-bottom: 6rem;
-  }
-
-  swiper-container {
-    width: 70%;
-    height: 70%;
-  }
-
-  @media (max-width: 640px) {
-    swiper-container {
-      width: 90%;
-      height: 90%;
+  <script>
+    // Ajustar slidesPerView dependiendo del tamaño de la pantalla
+    const swiperContainer = document.getElementById('mySwiper')
+    const updateSlidesPerView = (): void => {
+      const slidesPerView = window.innerWidth < 640 ? 1 : 3
+      swiperContainer!.setAttribute('slides-per-view', slidesPerView.toString())
     }
-  }
 
-  swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    // Actualizar al cargar la página
+    updateSlidesPerView()
 
-  swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-</style>
+    // Actualizar al cambiar el tamaño de la pantalla
+    window.addEventListener('resize', updateSlidesPerView)
+  </script>
+
+  <style>
+    section {
+      position: relative;
+      height: 100%;
+    }
+
+    section {
+      margin-bottom: 6rem;
+    }
+
+    swiper-container {
+      width: 65%;
+      height: 65%;
+    }
+
+    @media (max-width: 640px) {
+      swiper-container {
+        width: 90%;
+        height: 90%;
+      }
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</section>

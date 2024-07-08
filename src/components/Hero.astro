@@ -10,7 +10,7 @@
     />
 
     <div class='relative max-w-3xl text-center'>
-        <div class='flex justify-center items-center mb-96 lg:mb-64'>
+        <div class='flex justify-center items-center responsiveImage'>
             <img
                 src='/testimonials/soyyohanasilva.webp'
                 alt=''
@@ -54,5 +54,39 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow
 <style>
     span {
         color: #fbd1c0;
+    }
+    .responsiveImage {
+        margin-bottom: 20rem;
+    }
+    @media (min-width: 360px) {
+        .responsiveImage {
+            margin-bottom: 7rem;
+        }
+    }
+
+    @media (min-width: 390px) {
+        .responsiveImage {
+            margin-bottom: 12em;
+        }
+    }
+    @media (min-width: 414px) {
+        .responsiveImage {
+            margin-bottom: 18em;
+        }
+    }
+    @media (min-width: 430px) {
+        .responsiveImage {
+            margin-bottom: 20rem;
+        }
+    }
+    @media (width: 1024px) {
+        .responsiveImage {
+            margin-bottom: 10rem;
+        }
+    }
+    @media (width: 1280px) {
+        .responsiveImage {
+            margin-bottom: 10rem;
+        }
     }
 </style>

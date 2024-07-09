@@ -10,31 +10,31 @@
     />
 
     <div class='relative max-w-3xl text-center'>
-        <div class='flex justify-center items-center responsiveImage'>
+        <div class='flex justify-center items-center'>
             <img
-                src='/testimonials/soyyohanasilva.webp'
+                src='/testimonials/yohanasilva.png'
                 alt=''
-                class='rounded-xl w-72 h-20 xl:w-96 xl:h-24 lg:mt-10'
+                class='rounded-xl w-72 h-20 xl:w-96 xl:h-24 lg:mt-10 responsiveImage'
             />
         </div>
         <h1
-            class='text-3xl mx-3 font-semibold tracking-tight text-gray-800 mb-10 lg:text-3xl xl:text-5xl xl:-mx-3 md:text-3xl animate-slide-in-left'
+            class='text-2xl mx-3 font-semibold tracking-tight text-gray-800 mb-10 sm:text-3xl lg:text-3xl xl:text-4xl xl:-mx-3 md:text-3xl 2xl:text-5xl 2xl:-mb-1 animate-slide-in-left'
         >
-            Y te ayudo a
-            <span class='textColor'>transformar</span> tu cuerpo y <span
-                class='text-pink-400'>cambiar</span
-            > tu vida, con <span class='text-pink-400'
+            Te ayudo a
+            <span class='text-pink-600'>transformar</span> tu cuerpo y <span
+                class='text-pink-600'>cambiar</span
+            > tu vida, con <span class='text-pink-600'
                 >entrenamientos personalizados</span
             > y consejos de nutrición
         </h1>
-        <div class='flex justify-center items-center mb-20'>
+        <div class='flex justify-center items-center mb-20 mt-7'>
             <button
                 id='scroll-button'
                 class='cursor-pointer transition-all
 bg-gray-700 text-white px-10 py-2 text-md rounded-lg xl:text-lg xl:px-14
-border-[#fbd1c0]
+border-pink-500
 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
-active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-[#fbd1c0] shadow-[#fbd1c0] active:shadow-none'
+active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow-xl hover:shadow-pink-500 shadow-pink-500 active:shadow-none'
                 ><a href='#section-plans'>Quiero saber más</a>
             </button>
         </div>
@@ -52,41 +52,58 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow
         })
 </script>
 <style>
-    span {
+    /* span {
         color: #fbd1c0;
-    }
-    .responsiveImage {
-        margin-bottom: 20rem;
-    }
+    } */
+
     @media (min-width: 360px) {
         .responsiveImage {
-            margin-bottom: 7rem;
+            margin-bottom: 5em;
+            width: 35rem;
+            height: 8rem;
         }
     }
 
     @media (min-width: 390px) {
         .responsiveImage {
-            margin-bottom: 12em;
+            margin-bottom: 8em;
+            width: 20rem;
+            height: 5rem;
         }
     }
     @media (min-width: 414px) {
         .responsiveImage {
-            margin-bottom: 18em;
+            margin-bottom: 15em;
+            width: 23rem;
+            height: 6rem;
         }
     }
     @media (min-width: 430px) {
         .responsiveImage {
-            margin-bottom: 20rem;
+            margin-bottom: 15rem;
+            width: 25rem;
+            height: 7rem;
         }
     }
-    @media (width: 1024px) {
+    @media (min-width: 1024px) {
         .responsiveImage {
             margin-bottom: 10rem;
+            width: 29rem;
+            height: 8rem;
         }
     }
-    @media (width: 1280px) {
+    @media (min-width: 1280px) {
         .responsiveImage {
             margin-bottom: 10rem;
+            width: 36rem;
+            height: 9rem;
+        }
+    }
+    @media (min-width: 1281px) {
+        .responsiveImage {
+            margin-bottom: 14rem;
+            width: 40rem;
+            height: 11rem;
         }
     }
 </style>

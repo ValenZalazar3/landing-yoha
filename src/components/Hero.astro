@@ -18,19 +18,19 @@
             />
         </div>
         <h1
-            class='text-2xl mx-3 font-semibold tracking-tight text-gray-800 mb-10 sm:text-3xl lg:text-3xl xl:text-4xl xl:-mx-3 md:text-3xl 2xl:text-5xl 2xl:-mb-1 animate-slide-in-left'
+            class='textoStyle text-2xl mx-3 font-semibold tracking-tight text-gray-800 mb-10 sm:text-3xl lg:text-3xl xl:text-4xl xl:-mx-3 md:text-3xl 2xl:text-4xl 2xl:-mb-1 animate-slide-in-left'
         >
             Te ayudo a
             <span class='text-pink-600'>transformar</span> tu cuerpo y <span
                 class='text-pink-600'>cambiar</span
             > tu vida, con <span class='text-pink-600'
                 >entrenamientos personalizados</span
-            > y consejos de nutrición
+            > y asesoria nutricional
         </h1>
-        <div class='flex justify-center items-center mb-20 mt-7'>
+        <div class='flex justify-center items-center mb-16 mt-10'>
             <button
                 id='scroll-button'
-                class='cursor-pointer transition-all
+                class='boton cursor-pointer transition-all
 bg-gray-700 text-white px-10 py-2 text-md rounded-lg xl:text-lg xl:px-14
 border-pink-500
 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px]
@@ -92,18 +92,62 @@ active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:shadow
             height: 8rem;
         }
     }
+    @media (min-width: 1024px) and (min-height: 600px) {
+        .responsiveImage {
+            margin-bottom: 9rem;
+            width: 29rem;
+            height: 8rem;
+        }
+        .textoStyle {
+            margin-bottom: -22px;
+        }
+        .boton {
+        }
+    }
+    @media (min-width: 1000px) and (min-height: 500px) {
+        .responsiveImage {
+            margin-bottom: 9rem;
+            width: 29rem;
+            height: 8rem;
+        }
+        .textoStyle {
+            margin-bottom: -45px;
+        }
+        .boton {
+            margin-bottom: -1em;
+            margin-top: 1em;
+        }
+    }
+
     @media (min-width: 1280px) {
         .responsiveImage {
-            margin-bottom: 10rem;
+            margin-bottom: 14rem;
             width: 36rem;
             height: 9rem;
+        }
+        .textoStyle {
+            margin-bottom: -1px;
         }
     }
     @media (min-width: 1281px) {
         .responsiveImage {
             margin-bottom: 14rem;
-            width: 40rem;
-            height: 11rem;
+            width: 35rem;
+            height: 9rem;
+        }
+    }
+    @media (min-width: 1500px) and (min-height: 700px) {
+        .responsiveImage {
+            margin-bottom: 14rem;
+            width: 29rem;
+            height: 8rem;
+        }
+        .textoStyle {
+            margin-bottom: -45px;
+        }
+        .boton {
+            margin-bottom: -1em;
+            margin-top: 1em;
         }
     }
 </style>
